@@ -21,9 +21,9 @@ Until 1.3.0.4, you were able to override default configuration file via a docker
 ```
 docker run [...] -v /path/to/confdir:/kafka-manager-${KM_VERSION}/conf [...]
 ```
-From > 1.3.0.4, you can specify a configuration file via an environment variable.
+From > 1.3.0.4, you can specify a configuration file via env variable `KM_CONFIGFILE`.
 ```
-docker run [...] -v /path/to/confdir:/opt -e KM_CONFIG=/opt/my_shiny.conf sheepkiller/kafka-manager
+docker run [...] -v /path/to/confdir:/opt -e KM_CONFIGFILE=/opt/my_shiny.conf sheepkiller/kafka-manager
 ```
 
 ### Pass arguments to kafka-manager
